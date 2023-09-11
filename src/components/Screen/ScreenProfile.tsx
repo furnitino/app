@@ -4,7 +4,7 @@ import Layout from '../Layout';
 export default function ScreenProfile() {
   return (
     <Layout>
-      <StackY>
+      <StackY flexGrow={1} alignItems="center" justifyContent="center">
         <Text>Profile</Text>
       </StackY>
     </Layout>

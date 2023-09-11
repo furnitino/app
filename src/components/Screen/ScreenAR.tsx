@@ -3,7 +3,10 @@ import {StackY, Text} from '@viktorvojtek/react-native-simple-components';
 
 export default function ScreenAR() {
   return (
-    <StackY {...StyleSheet.absoluteFillObject}>
+    <StackY
+      alignItems="center"
+      justifyContent="center"
+      {...StyleSheet.absoluteFillObject}>
       <Text>AR</Text>
     </StackY>
   );

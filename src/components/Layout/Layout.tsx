@@ -11,7 +11,8 @@ export default function Layout({children}: Props) {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? 'dark-grey' : 'grey',
+    flex: 1,
+    backgroundColor: isDarkMode ? '#333333' : '#e6e6e6',
   };
 
   return (
@@ -23,6 +24,7 @@ export default function Layout({children}: Props) {
 
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
+        flexGrow={1}
         {...backgroundStyle}>
         {children}
       </ScrollView>

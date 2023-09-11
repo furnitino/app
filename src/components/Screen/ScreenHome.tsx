@@ -4,7 +4,7 @@ import Layout from '../Layout';
 export default function ScreenHome() {
   return (
     <Layout>
-      <StackY alignItems="center">
+      <StackY flexGrow={1} alignItems="center" justifyContent="center">
         <Text>Home</Text>
       </StackY>
     </Layout>
